@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-url = 'https://www.zip-codes.com/state/ma.asp'
+url = 'https://www.unitedstateszipcodes.org/in/'
 
 response = requests.get(url)
 
