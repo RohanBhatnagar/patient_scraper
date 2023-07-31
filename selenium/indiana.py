@@ -70,7 +70,7 @@ def main():
             soup = BeautifulSoup(s, 'html.parser')
             pret = soup.prettify()
             csv_arr = write(pret)
-            with open('indiana_output.csv', 'a') as file:
+            with open('indiana_output_for_mommy.csv', 'a') as file:
                 csv_writer = csv.writer(file)
                 for i in range(0, len(csv_arr), 1):
                     csv_writer.writerow(csv_arr[i])
