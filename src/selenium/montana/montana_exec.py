@@ -24,11 +24,11 @@ def search(zip):
 
     category = driver.find_element(by=By.ID, value='selectCategory')
     cDrop = Select(category)
-    cDrop.select_by_value('15')
+    cDrop.select_by_value('20')
 
     specialty = driver.find_element(by=By.ID, value='specialtyCategory')
     sDrop = Select(specialty)
-    sDrop.select_by_value('152W00000X')
+    sDrop.select_by_value('207W00000X')
 
     state = driver.find_element(by=By.ID, value='state')
     stDrop = Select(state)
@@ -107,7 +107,7 @@ def extract_write(arr):
 
     print("----> extracted")
 
-    csv_file_path = "./montana_opts.csv"
+    csv_file_path = "./montana_ophts.csv"
     with open(csv_file_path, mode="a", newline='') as csvfile:
         fieldnames = data.keys()
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
